@@ -6,3 +6,4 @@
 
 * [Api-gateway](https://github.com/daniil49926/Zunlix_api_gateway)
 * [User/Auth service](https://github.com/daniil49926/Zunlix_user_service)
+* [Mail sender service](https://github.com/daniil49926/Zunlix_mail_sender_service)
