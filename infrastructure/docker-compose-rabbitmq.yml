@@ -1,0 +1,16 @@
+version: "3.8"
+name: zunlix_infrastructure_rabbitmq
+
+services:
+  mq:
+    image: rabbitmq:3.12.4-management
+    container_name: zunlix_rabbitmg
+    hostname: rabbitmq
+    restart: always
+    environment:
+      - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
+      - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
+      - RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS=-rabbit disk_free_limit 17179869184
+    ports:
+      - "5672:5672"
+      - "15672:15672"
